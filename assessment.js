@@ -11,14 +11,9 @@ assessmentButton.onclick = () => {
 
     // 診断結果表示エリアの作成
     resultDivided.innerText = '';
-    const header = document.createElement('h3');
-    header.innerText = '診断結果';
-    resultDivided.appendChild(header);
-
-    const paragraph = document.createElement('p');
-    const result = assessment(userName);
-    paragraph.innerText = result;
-    resultDivided.appendChild(paragraph);
+    
+    // headerDivided の作成
+    const headerDivided = document.createElement('div');
 
     // ツイートエリアの作成
     tweetDivided.innerText = '';
