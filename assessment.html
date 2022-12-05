@@ -27,8 +27,10 @@
     <div class="container pt-5">
         <h1>あなたのいいところは？</h1>
         <p>診断したい名前を入力してください。</p>
-        <input type="text" id="user-name" size="40" maxlength="20">
-        <button id="assessment"> 診断する</button>
+        <div class="input-group mb-3" style="max-width: 500px;">
+            <input type="text" class="form-control" id="user-name" size="40" maxlength="20" />
+            <button class="input-group-text" id="assessment"> 診断する</button>
+        </div>
         <div id="result-area"></div>
         <div id="tweet-area"></div>
     </div>
